@@ -1151,11 +1151,13 @@
                             <h2 class="section-title">SUSCRÍBETE AHORA</h2>
                             <p>Para recibir noticias y promociones suscríbete a que estas esperando pu**to!.</p>
                         </div>
-                        <form class="subscribe-form">
-                            <label class="subscribe-icon"><i class="las la-envelope"></i></label>
-                            <input type="text" class="form--control" placeholder="Dirección de correo electrónico">
-                            <button type="submit" class="btn--base">RECIBIR ALERTA</button>
-                        </form>
+			    
+                        <form class="subscribe-form" id="email-form" action="mailto:tucorreo@ejemplo.com?subject=Suscripciones" method="post" enctype="text/plain">
+    <label class="subscribe-icon"><i class="las la-envelope"></i></label>
+    <input type=" text" class="form--control" placeholder="Dirección de correo electrónico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese una dirección de correo electrónico válida" name="Suscribir" required>
+    <button type="submit" class="btn--base">RECIBIR ALERTA</button>
+</form>
+			    
                     </div>
                 </div>
             </div>
